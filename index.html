@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HARKIN's HAIR STUDIO</title>
+  </head>
+
+  <!-- start -->
+
+  <body>
+    <section id="banner">
+      <div class="logo">
+        <img src="img\logo.png" alt="logo" />
+      </div>
+
+      <div class="text">
+        <h1>HARKIN's HAIR STUDIO</h1>
+        <p>Style Your Hair With India's Top Luxirous Salon</p>
+
+        <div class="button">
+          <a href="#"><span></span>Find out</a>
+          <a href="#"><span></span>Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- navigation bar -->
+    <div id="sidenav">
+      <nav>
+        <ul>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#footer">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menubtn">
+      <img src="img\menu.png" alt="menu btn" id="menu" />
+    </div>
+<!-- javasript -->
+    <script>
+      var menubtn = document.getElementById("menubtn");
+      var sidenav = document.getElementById("sidenav");
+      var menu = document.getElementById("menu");
+      sidenav.style.right = "-250px";
+      menubtn.onclick = function () {
+        if (sidenav.style.right == "-250px") {
+          sidenav.style.right = "0";
+          menu.src = "img/close.png";
+        } else {
+          sidenav.style.right = "-250px";
+          menu.src = "img/menu.png";
+        }
+      };
+    </script>
+
+
+    <!-- Features -->
+    <section id="feature">
+      <div class="title-text">
+        <p>FEATURES</p>
+        <h1>Why choose us</h1>
+      </div>
+
+      <!--  -->
+      <div class="feature-box">
+        <div class="feature">
+          <h1>Experienced Staff</h1>
+          <div class="feature-desc">
+            <div class="feature-icon"></div>
+            <div class="feature-icon">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Deleniti nam adipisci quisquam ex ipsa in nihil amet! Hic nulla
+                unde laborum eligendi sunt?
+              </p>
+            </div>
+          </div>
+          <h1>Affordable cost</h1>
+          <div class="feature-desc">
+            <div class="feature-icon"></div>
+            <div class="feature-icon">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Deleniti nam adipisci quisquam ex ipsa in nihil amet! Hic nulla
+                unde laborum eligendi sunt?
+              </p>
+            </div>
+          </div>
+          <h1>Pre-book online</h1>
+          <div class="feature-desc">
+            <div class="feature-icon"></div>
+            <div class="feature-icon">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Deleniti nam adipisci quisquam ex ipsa in nihil amet! Hic nulla
+                unde laborum eligendi sunt?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="feature-img">
+          <img src="/img/mens-service.jpg" alt="image" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- contact us -->
+    <section id="footer">
+      <div class="title-text">
+        <p>Contact us</p>
+        <h1>Visit shop today</h1>
+      </div>
+      <div class="row">
+        <div class="left">
+          <h2>Opening hours</h2>
+          <p></p><i class="fa fa-clock-o"></i> Monday to friday- 9 am to 9 pm</p>
+          <p><i class="fa fa-clock-o"></i>Saturday and sunday- 8 am to 11 pm</p>
+        </div>
+        <div class="right">
+          <h2>Get in touch</h2>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i>  #30 abc colony xyz vihar In </p>
+          <p><i class="fa fa-envelope" aria-hidden="true"></i>  harsh.dodi@gmail.com</p>
+          <p><i class="fa fa-phone-square" aria-hidden="true"></i>  +91 9876543210</p>
+        </div>
+      </div> 
+
+      <div class="social-link">
+        <a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a>
+         <a href="https://www.instagram.com/?hl=en" target="blank"><i class="fa fa-instagram"></i></a>
+      </div>
+    </section>
+  </body>
+</html>
